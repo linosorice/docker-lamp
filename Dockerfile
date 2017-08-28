@@ -1,8 +1,7 @@
 FROM centos:6
 MAINTAINER Pasqualino Sorice <lino.sorice@gmail.com>
 
-ENV code_root /home
-ENV httpd_conf ${code_root}/httpd.conf
+ENV httpd_conf /home/httpd.conf
 
 RUN yum install -y centos-release-SCL
 RUN yum install -y php54 php54-php php54-php-gd php54-php-mbstring php54-php-cli php54-php-mcrypt php54-php-pdo php54-php-xml php54-php-xdebug php54-php-mysqlnd
